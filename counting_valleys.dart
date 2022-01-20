@@ -33,6 +33,7 @@ bool checkStepsString(String stepsString, int stepsNumber) {
   bool valid = true;
   for (int i = 0; i < stepsString.length; i++) {
     if (!VALID_CHARACTERS.contains(stepsString[i])) {
+      print("Error the string contains unknow characters!");  
       valid = false;
       break;
     }
